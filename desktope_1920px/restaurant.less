@@ -52,6 +52,8 @@
         top: 0px;
         right: 0px;
         object-fit: cover;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
     }
     .photo__left {
         max-width: 45%;
@@ -59,5 +61,21 @@
         bottom: 0px;
         left: 0px;
         object-fit: cover;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    .photo__left:hover {
+        z-index: 6;
+        transform: scale(1.3);
+        -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+    .photo__right:hover {
+        z-index: 6;
+        transform: scale(1.3);
+        -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     }
 }

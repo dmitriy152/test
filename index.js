@@ -19,3 +19,20 @@ if (document.querySelector(".slider__conteiner")) {
         swiper.slideNext();
       }, 6000);
 }
+if (document.querySelector(".popup")){
+    let popup = document.querySelector(".popup")
+    let openPopup = document.querySelector(".reserve__button")
+    let sendButton = document.querySelector(".send")
+    let closeButton = document.querySelector(".close")
+    openPopup.addEventListener("click", function(){
+        popup.classList.add("popup-active")
+    })
+    sendButton.addEventListener("click", function(event){
+        event.preventDefault()
+        popup.classList.remove("popup-active")
+    })
+    closeButton.addEventListener("click", function(event){
+        event.preventDefault()
+        popup.classList.remove("popup-active")
+    })
+}
