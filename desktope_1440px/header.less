@@ -1,0 +1,245 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 100%;
+}
+.bg__header {
+    max-width: 100%;
+    padding: 23.5%;
+    background-image: url("img/bg-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 55px 150px 0px 150px;
+    .navigation__conteiner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 454px;
+    }
+    .navigation__item {
+        list-style: none;
+        a {
+            text-decoration: none;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            transition: all 0.3s ease-in-out;
+        }
+        a:hover {
+            font-size: 20px;
+            padding-bottom: 3px;
+            border-bottom: 1px solid #ffffff;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    .contact {
+        display: flex;
+        align-items: center;
+    }
+    .contact__icon {
+        margin-right: 11px;
+    }
+    .contact__text {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+}
+.cover {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 30%;
+    left: 0px;
+    right: 0px;
+    padding: 0px 150px 0px 150px;
+    .subtitle {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 32px;
+        letter-spacing: 0.06em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #FFFFFF;
+        margin: 0px 0px 24px 0px;
+    }
+    .title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 88px;
+        color: #FFFFFF;
+        margin: 0px 0px 40px 0px;
+    }
+    .button__cover {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .reserve__button {
+        width: 220px;
+        height: 80px;
+        border: none;
+        background: #3A4574;
+        text-align: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    .reserve__button:hover {
+        background: #2d355a;
+        transition: all 0.3s ease-in-out;
+    }
+    .reserve__button:active {
+        background: #3a4574de;
+        transition: all 0.3s ease-in-out;
+    }
+    .media__link__conteiner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 267px;
+    }
+    .link__item {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    .link__item:hover {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+}
+.popup {
+    position: fixed;
+    top: -2000px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    transition: all 1s ease-in-out;
+    z-index: 7;
+    background-color: #ffffffee;
+    form {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 32px;
+        color: #000000;
+    }
+    .label {
+        width: 200px;
+    }
+    input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #2d355a;
+        outline: none;
+        text-align: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 32px;
+        color: #000000;
+        background-color: transparent;
+    }
+    .button__conteiner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .send {
+        width: 45%;
+        height: 36px;
+        border: none;
+        text-align: center;
+        background-color: #2d355a;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+    .send:hover, .close:hover {
+        color: #000000;
+        border: 1px solid #000000;
+        background-color: transparent;
+        transition: all 0.4s ease-in-out;
+    }
+    .close {
+        width: 45%;
+        height: 36px;
+        border: none;
+        text-align: center;
+        background-color: #414d83;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+
+}
+.popup-active {
+    top: 50%;
+    transition: all 1s ease-in-out;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
