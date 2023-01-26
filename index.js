@@ -1,6 +1,5 @@
 if (document.querySelector(".slider__conteiner")) {
     const swiper = new Swiper(".mySwiper", {
-
         slidesPerView: 1,
         spaceBetween: 30,
         //loop: true, включит бесконечное прокручивание
@@ -29,6 +28,29 @@ if (document.querySelector(".popup")){
     })
     sendButton.addEventListener("click", function(event){
         event.preventDefault()
+        let inputName = document.querySelector(".input__name")
+        let inputPhone = document.querySelector(".input__phone")
+        let inputMail = document.querySelector(".input__mail")
+        let nameValue = inputName.value
+        let phoneValue = inputPhone.value
+        let mailValue = inputMail.value
+        let xhttp = new XMLHttpRequest();
+
+        xhttp.onreadystatechange = function(){
+            if(this.readyState == 4 &&  this.status == 200){
+                myFunction(this.responseText)
+            }
+            xhttp.open("GET", "",true)
+            xhttp.send()
+
+            function myFunction(data) {
+                console.log(data)
+            }
+        }
+
+        inputMail.value = ""
+        inputPhone.value = ""
+        inputName.value = ""
         popup.classList.remove("popup-active")
     })
     closeButton.addEventListener("click", function(event){
