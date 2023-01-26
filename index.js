@@ -1,3 +1,11 @@
+if(document.querySelector(".header__gamburger")) {
+ let gamburgerButton = document.querySelector(".header__gamburger")
+ let gamburger = document.querySelector(".navigation__conteiner")
+ gamburgerButton.addEventListener("click", function(){
+    gamburgerButton.classList.toggle("header__gamburger-active")
+    gamburger.classList.toggle("navigation__conteiner-active")
+ })
+}
 if (document.querySelector(".slider__conteiner")) {
     const swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
